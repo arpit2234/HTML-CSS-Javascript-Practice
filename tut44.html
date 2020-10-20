@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid templete area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+         'a a a a a a '
+         'b b b b b c'
+         'd d d d d d';
+        
+        }
+        .item{
+            border: 3px solid black;
+            background-color: burlywood;
+
+        }
+        #navbar{
+            grid-area: a;
+        }
+        #section{
+            grid-area: b;
+        }
+        #aside{
+            grid-area: c;
+        }
+        footer{
+            grid-area: d;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            home about contactus 
+        </div>
+        <div id="section"class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis architecto natus quis! Quasi ipsam officiis quaerat commodi dolore illo dolor possimus deleniti, ipsa nobis, aspernatur, eum eius excepturi illum tempora tenetur eveniet sunt suscipit?</div>
+        <div id="aside"class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eos officiis architecto.</div>
+  <footer class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ipsa enim consequatur.</footer>
+        <!-- <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+        <div class="item">item7</div>
+        <div class="item">item8</div>
+        <div class="item">item9</div>
+        <div class="item">item10</div>
+        <div class="item">item11</div>
+        <div class="item">item12</div>
+        <div class="item">item13</div>
+        <div class="item">item14</div> -->
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">this is my container</div>
+    
+</body>
+<script>
+    let jsnobj={
+        name:"arpit",
+        chanel:"arpitwfh",
+        friend:"myself",
+        food:"pizza"
+    }
+    console.log(jsnobj);
+
+    let a= JSON.stringify(jsnobj);
+    console.log(a);
+
+    a=a.replace('arpit',"parth");
+    console.log(a);
+
+    newjsn=JSON.parse(a);
+    console.log(newjsn);
+</script>
+</html:

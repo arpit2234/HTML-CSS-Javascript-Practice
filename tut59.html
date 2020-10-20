@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+       
+        current time is <span id="time"></span>
+    </div>
+    <script>
+        // console.log('this is date and time tutorial');
+        // let dt = new Date(0);
+        // console.log(dt);
+        let nd= new Date(2029,08,05);
+        console.log(nd);
+
+        // let yr=nd.getFullYear();
+        // console.log('this is year',yr);
+    //   let dt=nd.getDate();
+    //   console.log(dt);
+    //   let yr=nd.getFullYear();
+    //   console.log(yr);
+    //   let mn=nd.getMonth();
+    //   console.log(mn);
+    //   nd.setDate(5);
+    //   console.log(nd);
+    //   nd.setMonth(5);
+    //   console.log(nd);
+    //   nd.setFullYear(2025);
+    //   console.log(nd);
+      setInterval(utime, 1000);
+      function utime(){
+          time.innerHTML=new Date();
+      }
+    
+        
+        
+
+    </script>
+    
+</body>
+</html>

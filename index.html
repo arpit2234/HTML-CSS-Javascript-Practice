@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpit fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body{
+        color: white;
+    
+ 
+       
+        background: url(img/arp.jpg) no-repeat center center fixed; 
+        background-size: cover;
+     }
+     .left{
+         border: 2px solid red;
+         display: inline-block;
+         position: absolute;
+        left: 20px;
+        top: 20px;
+
+
+     }
+     .center{
+        border: 2px solid green;
+        display: block;
+        width: 45%;
+        margin: 20px auto;
+
+     }
+     .right{
+        border: 2px solid yellow;
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      
+        
+
+     }
+
+     .navbar{
+         display: inline-block;
+     }
+     .navbar li{
+        display: inline-block;
+        font-size: 25px;
+     }
+     .navbar li a{
+         color: white; 
+         font-weight: bold;
+        text-decoration: none;
+        padding: 25px 20px;
+        
+     }
+     .navbar li a:hover, .navbar li a.active{
+         text-decoration: underline;
+         color: rgb(226, 19, 19);
+     }
+     .btn{
+         display: inline block;
+        font-family: cursive;
+        font-size: 15px;
+        background-color: indianred;
+    
+     }
+     .btn:hover{
+         background-color: lawngreen;
+         font-weight: bolder;
+     }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            i am left
+
+        </div>
+        <div class="center">
+          <ul class="navbar">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Fitness calculator</a></li>
+              <li><a href="#">Contact us</a></li>
+          </ul>
+
+        </div>
+        <div class="right">
+           <button class="btn">Contact us</button>
+           <button  class="btn">Email us</button>
+
+        </div>
+
+    </header>
+    
+</body>
+</html>

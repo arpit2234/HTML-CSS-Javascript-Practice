@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "a a a a"
+          "b b b c"
+          "d d d d";
+       
+      }
+      @media (min-width: 1000px) {
+        body {
+          background-color: seagreen;
+        }
+        
+      }
+      @media (min-width: 700px) and (max-width: 999px) {
+        body  {
+          background-color: rgb(23, 221, 109);
+        }
+        .navbar{
+            background-color: skyblue;
+        }
+      }
+      @media (min-width: 400px) and (max-width: 699px) {
+        body  {
+          background-color: rgb(163, 236, 79);
+        }
+        aside{
+            display: none;
+        }
+      }
+      @media (max-width: 399px) {
+        body  {
+          background-color: rgb(236, 168, 79);
+        }
+       
+        
+      }
+
+      nav {
+        border: 2px solid red;
+        background-color: salmon;
+        grid-area: a;
+      }
+      section {
+        border: 2px solid red;
+        background-color: salmon;
+        grid-area: b;
+      }
+      aside {
+        border: 2px solid red;
+        background-color: salmon;
+        grid-area: c;
+      }
+      footer {
+        border: 2px solid red;
+        background-color: salmon;
+        grid-area: d;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">home aboutus contactus email</nav>
+      <section>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
+        excepturi earum. Quidem dignissimos consectetur neque quisquam porro
+        blanditiis culpa nesciunt omnis non cum quo autem similique cumque
+        officiis doloribus molestiae odio a pariatur, perspiciatis ipsum
+        distinctio praesentium adipisci sit magni? Accusamus delectus aperiam
+        itaque aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Id, tempora magni consequuntur architecto voluptas praesentium animi
+        accusantium recusandae perspiciatis eveniet minima cupiditate similique
+        officia quam doloribus fuga dolores nesciunt repudiandae doloremque
+        deserunt modi totam molestias neque accusamus! Dolor, autem blanditiis.
+        Necessitatibus reiciendis aperiam maxime, adipisci quibusdam sequi ipsa
+        sed iure tempore dignissimos, eius blanditiis ipsam facilis possimus
+        sapiente ullam n
+      </section>
+      <aside>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rem sit
+        laborum!
+      </aside>
+      <footer>lern css in hindi</footer>
+    </div>
+  </body>
+</html>

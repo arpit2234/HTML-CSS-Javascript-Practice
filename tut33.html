@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and after psedu selector</title>
+    <style>
+      body {
+        margin: 0px;
+        background-color: black;
+        color: white;
+        padding: 0px;
+       
+        
+      }
+      header::before{
+          content: "";
+          background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          opacity: 0.35;
+
+      }
+      .navigation {
+        display: flex;
+      }
+      li {
+        list-style: none;
+        padding: 34px 23px;
+      }
+      section {
+          height: 344px;
+          justify-content: center;
+         
+          margin: 3px 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+      h3{
+          font-size:4rem;
+
+      }
+     
+      /* section::before
+          content: "this is content"
+    */
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li class="item">Home</li>
+          <li class="item">About</li>
+          <li class="item">Services</li>
+          <li class="item">Contact us</li>
+        </ul>
+      </nav>
+    </header>
+      <section>
+        <h3> <em> <u> Welcome to coding world       </u></em></h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque,
+          placeat aspernatur expedita aliquam reiciendis. Repellat iure harum
+          nobis saepe, fugit similique, cum, nemo rerum excepturi laborum iusto
+          incidunt dolores debitis. Eius, odio iusto.
+        </p>
+      </section>
+      <hr>
+   
+  </body>
+</html>

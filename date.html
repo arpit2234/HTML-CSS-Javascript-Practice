@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"></div>
+    <span id="time">this is time</span>
+</body>
+<script>
+    let a =new Date();
+    console.log(a);
+    let dt =a.getMonth();
+    console.log(dt);
+   a.setMonth(10);
+    console.log(a);
+    setInterval(ti, 1000);
+    function ti(){
+        time.innerHTML=new Date();
+    
+    }
+</script>
+</html>
